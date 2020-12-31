@@ -10,7 +10,7 @@ WORKDIR /app
 
 ADD scripts/entrypoint.sh /app
 
-ARG PACKAGE_VERSION
+ARG PACKAGE_VERSION=1.0.0
 
 RUN pip --no-cache-dir install alertmanager-gchat-integration==$PACKAGE_VERSION
 
